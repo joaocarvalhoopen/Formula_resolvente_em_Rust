@@ -95,7 +95,7 @@ recebe três numeros correspondentes ao valor escalar de cada termo de um polin�
 fn calcula_formula_resolvente(a: f32, b: f32, c: f32) ->  Vec<f32> { 
     let mut list: Vec<f32> = Vec::new();
     let delta = b * b - 4.0 * a * c; 
-    if delta <= 0.0 {
+    if delta < 0.0 {
         // Zero raizes por tanto equação impossivel!
         // return lista vazia; Não preenchemos nada. 
     } else if delta <= 0.000001 {
